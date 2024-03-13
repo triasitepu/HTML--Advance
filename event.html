@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>event.html</title>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="icon.png" sizes="16x16" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Ajeng">
+        <meta name="nim" content="233307028">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            header {
+                background-color: #666;
+                padding: 30px;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+            }
+            nav {
+                float: left;
+                width: 30%;
+                height: 550px;
+                background: #ccc;
+                padding: 20px;
+            }
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            article {
+                float: left;
+                padding: 20px;
+                width: 70%;
+                background-color: #f1f1f1;
+                height: 550px;
+            }
+            section::after {
+                content: " ";
+                display: table;
+                clear: both;
+            }
+            footer {
+                background-color: #777;
+                padding: 20px;
+                text-align: center;
+                color: white;
+            }
+            @media (max-width: 600px) {
+                nav, article {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>Website Ajeng</h2>
+        </header>
+
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gambar.html">Gambar</a></li>
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="audio.html">Audio</a></li>
+                    <li><a href="video.html">Video</a></li>
+                    <li><a href="svg.html">SVG</a></li>
+                    <li><a href="canvas.html"> Canvas</a></li>
+                    <li><a href="pendaftaran.html">Form Pendaftaran</a></li>
+                </ul>
+            </nav>
+            <article>
+                <h1>Gambar Pemandangan</h1>
+                <img src="gambar.jpg" width="200px" height="150px" alt="gambar" onclick="alert('Anda telah menekan gambar!')">
+                <img src="gambar1.jpg" width="200px" height="150px" alt="gambar1" onclick="alert('Anda telah menekan gambar!')">
+                <img src="gambar2.jpg" width="200px" height="150px" alt="gambar2" onclick="alert('Anda telah menekan gambar!')"><br>
+                <img src="gambar4.jpg" width="200px" height="150px" alt="gambar4"onclick="alert('Anda telah menekan gambar!')">
+                <img src="gambar5.jpg" width="200px" height="150px" alt="gambar5"onclick="alert('Anda telah menekan gambar!')">
+                <img src="gambar6.jpg" width="200px" height="150px" alt="gambar6"onclick="alert('Anda telah menekan gambar!')">
+                <p><!--menampilkan sebuah halaman web yang berisi judul, article, dan footer--></p>
+                <p>Kesimpulan : <br><br>
+                    Kesimpulan dari website ini adalah kita mengatur mouse event yaitu pergerakan dan interaksi mouse.
+            ada atribut onclick, ondbbclick, onmousedown, onmousemove, onmouseout, onmouseover. Setiap atribut
+            tersebut memiliki fungsi yang berbeda saat menampilkan pesan yang terkait dengan pergerakan mouse. 
+                    <br><br>
+                    233307028_Tria Wilujeng Rahayu br Sitepu
+                </p>
+            </article>
+        </section>
+
+        <footer>
+            <p>Terimakasih telah mengunjungi website ini!!!</p>
+        </footer>
+        
+    </body>
+</html>

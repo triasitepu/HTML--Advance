@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Halaman Beranda</title>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="icon.png" sizes="16x16" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Ajeng">
+        <meta name="nim" content="233307028">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            header {
+                background-color: #666;
+                padding: 30px;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+            }
+            nav {
+                float: left;
+                width: 30%;
+                height: 550px;
+                background: #ccc;
+                padding: 20px;
+            }
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            article {
+                float: left;
+                padding: 20px;
+                width: 70%;
+                background-color: #f1f1f1;
+                height: 550px;
+            }
+            section::after {
+                content: " ";
+                display: table;
+                clear: both;
+            }
+            footer {
+                background-color: #777;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+            @media (max-width: 600px) {
+                nav, article {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>Website Ajeng</h2>
+        </header>
+
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gambar.html">Gambar</a></li>
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="audio.html">Audio</a></li>
+                    <li><a href="video.html">Video</a></li>
+                    <li><a href="svg.html">SVG</a></li>
+                    <li><a href="canvas.html"> Canvas</a></li>
+                    <li><a href="pendaftaran.html">Form Pendaftaran</a></li>
+                </ul>
+            </nav>
+            <article>
+                <h1>Form Penjadwalan Pertemuan</h1>
+                <div class="container"  >
+                    <form action="proses.php" method="post" >
+                        <fieldset>
+                        <legend>Informasi Pribadi</legend>
+                        
+                        <table>
+                            <tr>     
+                                <td><label for="nama">Nama</label></td>
+                                <td><input type="text" id="nama" name="nama" required /></td>
+                            </tr>
+                            <tr>
+                                <td><label for="telp">No. Telepon</label></td>
+                                <td><input type="text" id="telp" name="telepon" placeholder="XXXX-XXXXXX" pattern="[0-9]{4}-[0-9]{6}" /></td>
+                            </tr>
+                            <tr>
+                                <td><label for="email">Alamat email</label></td>    
+                                <td><input type="text" id="nama" name="nama" placeholder="nama@gmail.com" /></td>
+                            </tr>
+                            <tr>
+                                <td><label for="tanggal">Tanggal Lahir</label></td>
+                                <td><input type="date" id="tanggal" name="tanggal" min="1987-01-01" max="1993-01-01" required></td>
+                            </tr>
+                        </table>
+                        </fieldset>
+                        <br>
+                <div id="content">
+                    <form method="post" action="proses.php">
+                        <fieldset>
+                        <legend>Permintaan Pertemuan</legend>
+                        <table>
+                            <tr>
+                                <td><label for="Tujuan Pertemuan">Tujuan Pertemuan</label></td>
+                                <td><input type="text" id="nama" name="nama" required /></td>
+                            </tr>
+                            <tr>
+                                <td><label for="tingkat">Tingkat Kepentingan Pertemuan</label></td>
+                                <td> <input type="range" id="tingkat" name="tingkat" min="0" max="10" ></td>
+                            </tr>
+                            <div class="form-group">
+                                <label for="tanggal">Tanggal (di atas hari ini):</label>
+                                <input type="date" id="tanggal" name="tanggal" min="" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="jam">Jam (17.00-21.00 WIB):</label>
+                                <input type="time" id="jam" name="jam" min="17:00" max="21:00" required>
+                            </div>
+                        </table>
+                        </fieldset>
+                    </form>
+                    <br>
+                    <table>
+                        <tr>
+                            <td>
+                            <button type="submit" name="daftar">submit</button>
+                            </td>
+                        </tr>    
+                    </table>        
+        </article>
+
+        <footer>
+            <p>Terimakasih telah mengunjungi website ini!!!</p>
+        </footer>
+    
+    </body>
+</html>
